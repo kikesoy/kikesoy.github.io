@@ -1,85 +1,543 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H3DV85DW6Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H3DV85DW6Y');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio - Proyecto Starwars</title>
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:200,700|Saira+Semi+Condensed:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/a649e445b9.js"></script>
+    <title>Enrique Soto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <!--MODAL-->
-    <div class="modal fade" id="swModal" tabindex="-1" role="dialog" aria-labelledby="swModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-episode" id="swModalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-cover"></div>
-                <div class="modal-body">
-                    <h4 class="modal-title"></h4>
-                    <p class="modal-crawler"></p>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item"><i class="fa fa-bullhorn" aria-hidden="true"></i> <span class="modal-director"></span></li>
-                    <li class="list-group-item"><i class="fa fa-ticket" aria-hidden="true"></i> <span class="modal-producer"></span></li>
-                    <li class="list-group-item"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="modal-release"></span></li>';
-                </ul>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="btn-all-films">Ver todas las peliculas</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /MODAL -->
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="img/logo-star-wars.svg" alt="Logo Star Wars">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul id="main-nav" class="navbar-nav ml-auto">
-                    <li id="btn-home" class="nav-item text-center active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li id="btn-films" class="nav-item text-center">
-                        <a class="nav-link" href="#peliculas">Películas</a>
-                    </li>
-                    <li id="btn-people" class="nav-item text-center">
-                        <a class="nav-link" href="#personajes">Personajes</a>
-                    </li>
-                    <li id="btn-planets" class="nav-item text-center">
-                        <a class="nav-link" href="#planetas">Planetas</a>
-                    </li>
-                    <li id="btn-vehicles" class="nav-item text-center">
-                        <a class="nav-link" href="#vehiculos">Vehículos</a>
-                    </li>
-                    <li id="btn-starships" class="nav-item text-center">
-                        <a class="nav-link" href="#starships">Starships</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main id="placeholder">
-        <section id="home">
+
+    <section class="landing__cover">
+        <!-- <video autoplay muted loop>
+            <source src="assets/portafolio_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <picture class="cover__asset">
+            <source media="(min-width:768px)" srcset="./assets/cover-6-d.webp">
+            <img src="./assets/cover-6-m.webp" alt="">
+        </picture>
+    </section>
+
+    <section class="section__container section__container--cover watch" id="sectionCover" data-naming="Inicio">
+        <header class="section__header">
+            <h2 class="elem__text text__elem--cover-name">Enrique Soto</h2>
+
+            <picture class="cover__media">
+                <source media="(min-width:768px)" srcset="./assets/text-web-designer-h.svg">
+                <img src="./assets/text-web-designer-v.svg" alt="">
+            </picture>
+
+            <p class="elem__text elem__text--cover-info">
+                Transforma tu negocio con experiencia digital de alto impacto
+            </p>
+        </header>
+    </section>
+
+    <main class="landing__main">
+        <!-- COVER -->
+
+        <!-- ABOUT ME -->
+        <section class="section__container section__container--about watch" id="sectionAbout" data-naming="Sobre mí">
+            <header class="section__header">
+                <h2 class="elem__text elem__text--section-title">
+                    Con más de 15 años en el universo digital, he convertido retos en oportunidades y objetivos en
+                    experiencias web que generan resultados reales.
+                </h2>
+                <p class="elem__text">
+                    Mi especialidad es ayudarte a que tu marca, empresa, agencia o startup destaque online, combinando
+                    diseño, tecnología y una visión estratégica centrada en tus necesidades y las de tus usuarios.
+                </p>
+            </header>
+        </section>
+
+
+        <!-- PORTFOLIO -->
+        <section class="section__container section__container--portafolio watch" id="sectionPortfolio"
+            data-naming="Portafolio">
+            <article class="portfolio__slide">
+                <aside class="portfolio__info">
+                    <header class="portfolio__header">
+                        <h3 class="text__portfolio text__portfolio--name">Bershka</h3>
+                        <h2 class="text__portfolio text__portfolio--project">Style Test</h2>
+
+                        <p class="text__portfolio text__portfolio--info hide--mobile">Landing page que invita al
+                            visitante a descubir su estilo ideal en función a divertidas preguntas.</p>
+
+                        <ul class="tags__list hide--mobile">
+                            <li class="tag__item">Figma</li>
+                            <li class="tag__item">HTML5</li>
+                            <li class="tag__item">CSS3</li>
+                            <li class="tag__item">JavaScript</li>
+                        </ul>
+                    </header>
+
+
+                </aside>
+
+                <aside class="portfolio__assets">
+                    <header class="portfolio__header hide--desktop">
+                        <p class="text__portfolio text__portfolio--info">Landing page que invita al visitante a descubir
+                            su estilo ideal en función a divertidas preguntas.</p>
+                        <ul class="tags__list">
+                            <li class="tag__item">Figma</li>
+                            <li class="tag__item">HTML5</li>
+                            <li class="tag__item">CSS3</li>
+                            <li class="tag__item">JavaScript</li>
+                        </ul>
+                    </header>
+
+
+                    <img src="./assets/project-bershka-style-test-01.jpg" alt="">
+                    <img src="./assets/project-bershka-style-test-02.jpg" alt="">
+                </aside>
+            </article>
+
+            <article class="portfolio__slide">
+                <aside class="portfolio__info">
+                    <header class="portfolio__header">
+                        <h3 class="text__portfolio text__portfolio--name">Movistar</h3>
+                        <h2 class="text__portfolio text__portfolio--project">Desafío Spining Movistar</h2>
+
+                        <p class="text__portfolio text__portfolio--info hide--mobile">Diseño y desarrollo del sitio web
+                            para la promoción y e inscripción para participar en la rodada maratónica con instructores
+                            top de Venezuela en el evento anual Desafío Spining Movistar.</p>
+
+                        <ul class="tags__list hide--mobile">
+                            <li class="tag__item">Figma</li>
+                            <li class="tag__item">Astro</li>
+                            <li class="tag__item">HTML5</li>
+                            <li class="tag__item">CSS3</li>
+                            <li class="tag__item">JavaScript</li>
+                        </ul>
+                    </header>
+                </aside>
+
+                <aside class="portfolio__assets">
+                    <header class="portfolio__header hide--desktop">
+                        <p class="text__portfolio text__portfolio--info">iseño y desarrollo del sitio web para la
+                            promoción y e inscripción para participar en la rodada maratónica con instructores top de
+                            Venezuela en el evento anual Desafío Spining Movistar.</p>
+
+                        <ul class="tags__list">
+                            <li class="tag__item">Figma</li>
+                            <li class="tag__item">Astro</li>
+                            <li class="tag__item">HTML5</li>
+                            <li class="tag__item">CSS3</li>
+                            <li class="tag__item">JavaScript</li>
+                        </ul>
+                    </header>
+
+                    <picture class="portfolio__media">
+                        <source media="(min-width:768px)" srcset="./assets/project-movistar-d.webp">
+                        <img src="./assets/project-movistar.webp" alt="Website Desafío Spining Movistar">
+                    </picture>
+
+                </aside>
+            </article>
 
         </section>
+
+
+        <section class="section__container section__container--customers watch" id="sectionCustomers"
+            data-naming="Clientes">
+            <header class="section__header">
+                <h2 class="elem__text elem__text--section-title">Desde la primera idea hasta el lanzamiento final</h2>
+                <p class="elem__text">Me involucro como un socio estratégico en tu proyecto. No solo creo sitios web
+                    atractivos; construyo soluciones a medida que funcionan impecablemente, optimizadas para crecer y
+                    convertir visitantes en clientes. He trabajado para marcas líderes como DirecTV, Bershka y
+                    organizaciones de alto nivel, lo que me permite anticipar problemáticas y entregar calidad bajo
+                    cualquier estándar de exigencia.</p>
+            </header>
+
+            <!--logos de clientes-->
+
+            <article class="marquee__container">
+                <ul class="marquee__list">
+                    <li class="marquee__item"><img src="./assets/client-banco-exterior.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bayer.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bershka.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bigott.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-directv.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-mail-boxes-etc.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-polar.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-syngenta.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-unilever.png" alt=""></li>
+                </ul>
+                <ul class="marquee__list" aria-hidden="true">
+                    <li class="marquee__item"><img src="./assets/client-banco-exterior.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bayer.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bershka.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-bigott.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-directv.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-mail-boxes-etc.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-polar.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-syngenta.png" alt=""></li>
+                    <li class="marquee__item"><img src="./assets/client-unilever.png" alt=""></li>
+                </ul>
+            </article>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="section__container section__container--services watch" id="sectionServices"
+            data-naming="Servicios">
+            <header class="section__header">
+                <h2 class="elem__text elem__text--section-title">A la medida de tus necesidades</h2>
+                <p class="elem__text">Ya sea que necesites una landing page ultra rápida, una tienda online robusta y
+                    autogestionable, o rediseñar la experiencia digital de tu empresa, te acompaño en cada etapa. Cada
+                    desarrollo es único: interfaces claras, eficientes, humanas, listas para posicionar tu marca donde
+                    merece estar.</p>
+            </header>
+
+            <!--card services-->
+
+            <article class="slider__container">
+                <ul class="slider__list slider__list--services">
+                    <li class="slider__item">
+                        <header class="slider__header">
+                            <i class="icon slider__icon slider__icon--design"></i>
+                            <h3 class="text__slider text__slider--title">UI/UX</h3>
+                        </header>
+                        <p class="text__slider text__slider--description">Diseño UI/UX enfocado en conversión y
+                            usabilidad.</p>
+                    </li>
+                    <li class="slider__item">
+                        <header class="slider__header">
+                            <i class="icon slider__icon slider__icon--devices"></i>
+                            <h3 class="text__slider text__slider--title">Web</h3>
+                        </header>
+                        <p class="text__slider text__slider--description">Desarrollo web a medida (WordPress, Astro,
+                            HTML5) de alto rendimiento.</p>
+                    </li>
+                    <li class="slider__item">
+                        <header class="slider__header">
+                            <i class="icon slider__icon slider__icon--shopping-cart"></i>
+                            <h3 class="text__slider text__slider--title">E-commerce</h3>
+                        </header>
+                        <p class="text__slider text__slider--description">E-commerce fácil de administrar y escalable
+                            con WooCommerce.</p>
+                    </li>
+                    <li class="slider__item">
+                        <header class="slider__header">
+                            <i class="icon slider__icon slider__icon--nodes"></i>
+                            <h3 class="text__slider text__slider--title">Empresas</h3>
+                        </header>
+                        <p class="text__slider text__slider--description">Consultoría estratégica y procesos claros, sin
+                            sorpresas.</p>
+                    </li>
+                    <li class="slider__item">
+                        <header class="slider__header">
+                            <i class="icon slider__icon slider__icon--bulb"></i>
+                            <h3 class="text__slider text__slider--title">Experiencia</h3>
+                        </header>
+                        <p class="text__slider text__slider--description">Experiencia diversa: corporativos, pymes,
+                            startups, moda y motor sports.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+
+        <!-- NAVBAR -->
+        <nav class="landing__navbar" id="navbar" role="navigation" aria-label="Landing navigation">
+            <picture class="navbar__logo">
+                <img src="assets/text-name.svg" alt="Enrique Soto Logo">
+            </picture>
+
+            <ul class="navbar__list" id="navMenu"> </ul>
+
+            <article class="navbar__toggle">
+                <label for="navbarToggle" class="navbar__toggle--label">
+                    <span class="navbar__toggle--label-section" id="labelSection"></span>
+                    <div class="navbar__toggle--icons">
+                        <div class="navbar__toggle--icons-wrapper">
+                            <img src="./assets/icon-menu.svg" alt="" class="icon__menu">
+                            <img src="./assets/icon-close.svg" alt="" class="icon__menu">
+                        </div>
+                    </div>
+                </label>
+
+                <input type="checkbox" name="navbarToggle" id="navbarToggle" class="navbar__toggle--input"
+                    aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+            </article>
+        </nav>
     </main>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/home.js"></script>
+
+
+    <!-- FOOTER -->
+    <footer class="landing__footer">
+        <section class="section__container section__container--footer watch" id="sectionFooter" data-naming="Contacto">
+            <header class="section__header">
+                <h2 class="elem__text elem__text--section-title">Comprometido con el éxito</h2>
+                <p class="elem__text">Si buscas más que un diseñador, y quieres un socio creativo comprometido con tu
+                    éxito digital: este es el momento de potenciar tu proyecto con experiencia probada y visión
+                    integral.</p>
+            </header>
+            <!--
+            <form id="form" class="landing__form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="4b9d9932-d002-419e-a099-10dce4306d92">
+                <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+                <input type="text" name="name" class="form__input" placeholder="Nombre" required>
+                <input type="email" name="email" class="form__input" placeholder="Correo electrónico" required>
+                <textarea name="message" class="form__textarea" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="button__cta">
+                    <span>Enviar</span>
+                </button>
+            </form>
+            -->
+
+
+            <article class="form__container">
+                <form action="https://api.web3forms.com/submit" method="POST" id="form"
+                    class="form__elem needs-validation" novalidate>
+                    <input type="hidden" name="access_key" value="4b9d9932-d002-419e-a099-10dce4306d92" />
+                    <input type="hidden" name="subject" value="Contacto desde landing page" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+
+                    <div class="input__wrapper input__wrapper--name">
+                        <label for="first_name"
+                            class="input__label block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                            <span class="label__text">Name</span>
+
+                            <span class="empty-feedback invalid-feedback text__alert">
+                                Please provide your name.
+                            </span>
+                        </label>
+
+                        <input type="text" name="name" id="first_name" placeholder="John" required autocomplete="name"
+                            class="input__field input__field--text" />
+                    </div>
+
+
+                    <div class="input__wrapper input__wrapper--email">
+                        <label for="email" class="input__label block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                            <span class="label__text">Email Address</span>
+
+                            <span class="empty-feedback text__alert">
+                                Please provide your email address.
+                            </span>
+
+                            <span class="invalid-feedback text__alert">
+                                Please provide a valid email address.
+                            </span>
+                        </label>
+
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required
+                            autocomplete="email" class="input__field input__field--email" />
+                    </div>
+
+
+                    <div class="input__wrapper input__wrapper--message">
+                        <label for="message" class="input__label block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                            <span class="label__text">Your Message</span>
+
+                            <span class="empty-feedback invalid-feedback text__alert">
+                                Please enter your message.
+                            </span>
+                        </label>
+
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message"
+                            class="input__field input__field--textarea" required></textarea>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <button type="submit" class="cta__button cta__button--submit">
+                            Send Message
+                        </button>
+                    </div>
+
+                    <div class="snackbar__elem" id="result"></div>
+                </form>
+            </article>
+
+            <div class="footer__marquee">
+                <img src="./assets/text-name.svg" alt="Enrique Soto"
+                    class="footer__marquee--svg footer__marquee--svg-name">
+                <img src="./assets/text-web-designer-h.svg" alt="Web Designer"
+                    class="footer__marquee--svg footer__marquee--svg-title">
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        const FORM = document.getElementById('form');
+        const BTN_SUBMIT = FORM.querySelector('button[type="submit"]');
+        const NAVBAR = document.getElementById('navbar');
+        const NAVBAR_TOGGLE = document.getElementById('navbarToggle');
+        const NAVBAR_MENU = document.getElementById('navMenu');
+        const SECTIONS = document.querySelectorAll('section.section__container');
+        const LABEL_SECTION = document.getElementById('labelSection');
+        const TEXT_ELEMS = document.querySelectorAll('.elem__text');
+        let mobileBreakpoint = window.matchMedia('(max-width: 767px)');
+
+        function isMobile(media) {
+            return media.matches ? true : false;
+        }
+
+
+        /*
+        function updateLabelSection() {
+            const CHECKED = NAVBAR_TOGGLE.checked;
+
+            const FIRST_SECTION = document.querySelector('section.section__container');
+            const FIRST_SECTION_NAME = FIRST_SECTION.getAttribute('data-naming');
+            LABEL_SECTION.textContent = FIRST_SECTION_NAME;
+        }
+        */
+
+        // if(isMobile(mobileBreakpoint)) {
+        //     NAVBAR_TOGGLE.addEventListener('change', updateLabelSection);
+        // }
+
+
+        // GENERATE NAV MENU
+        SECTIONS.forEach(section => {
+            const SECTION_NAME = section.getAttribute('data-naming');
+
+            NAVBAR_MENU.innerHTML += `<li class="navbar__item navbar__item--${section.id}"><a href="#${section.id}" class="navbar__link" data-target="${section.id}">${SECTION_NAME}</a></li>`;
+        });
+
+
+        // MOBILE NAVBAR TOGGLE
+        if (NAVBAR_TOGGLE) {
+
+            NAVBAR_TOGGLE.addEventListener('change', (e) => {
+                let IS_EXPANDED = e.target.checked;
+
+                e.target.setAttribute('aria-expanded', IS_EXPANDED);
+
+                if (IS_EXPANDED) {
+                    NAVBAR.classList.add('expanded');
+                } else {
+                    NAVBAR.classList.remove('expanded');
+                }
+            });
+
+            NAVBAR_MENU.addEventListener('click', (e) => {
+                if (e.target.classList.contains('navbar__link')) {
+                    NAVBAR.classList.remove('expanded');
+                    NAVBAR_TOGGLE.setAttribute('aria-expanded', false);
+                    NAVBAR_TOGGLE.checked = false;
+                }
+            });
+        }
+
+
+        // INTERSECTION OBSERVER
+        function createObserver(element, callback, options) {
+            const observer = new IntersectionObserver(callback, options);
+            observer.observe(element);
+        }
+
+
+        function isIntersecting() {
+            return function (entries) {
+                entries.forEach(entry => {
+                    const isIntersecting = entry.isIntersecting
+
+                    entry.target.classList.toggle("intersecting", isIntersecting)
+                })
+            }
+        }
+
+        function observerSection() {
+            return function (entries) {
+                entries.forEach(entry => {
+                    const isIntersecting = entry.isIntersecting
+
+                    entry.target.classList.toggle("intersecting", isIntersecting)
+
+                    // isIntersecting ? LABEL_SECTION.textContent = entry.target.dataset.naming : null;
+                })
+            }
+        }
+
+        const OPTIONS_NAVBAR = {
+            root: null,
+            rootMargin: '0px 0px -32px 0px',
+            threshold: 0
+        };
+
+        const OPTIONS_SECTIONS = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0
+        };
+
+        function menuSectionNaming(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    LABEL_SECTION.textContent = entry.target.dataset.naming
+                }
+            });
+        };
+
+        const observerMenuSectionNaming = new IntersectionObserver(menuSectionNaming, {
+            rootMargin: '-25% 0px -25% 0px',
+            threshold: 0
+        });
+
+
+        function menuScrollSpy(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll('.navbar__link').forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('data-target') === entry.target.id);
+                    });
+                }
+            });
+        };
+
+        const observerMenuScrollSpy = new IntersectionObserver(menuScrollSpy, {
+            rootMargin: '-25% 0px -25% 0px',
+            threshold: 0
+        });
+
+
+        // OBSERVERS
+        createObserver(NAVBAR, isIntersecting(), OPTIONS_NAVBAR)
+
+
+        SECTIONS.forEach(section => {
+            createObserver(section, isIntersecting(), OPTIONS_SECTIONS)
+
+            observerMenuScrollSpy.observe(section)
+
+            if (isMobile(mobileBreakpoint)) {
+                observerMenuSectionNaming.observe(section)
+            }
+        });
+
+
+        TEXT_ELEMS.forEach(section => {
+            createObserver(section, isIntersecting(), OPTIONS_SECTIONS)
+        });
+
+        mobileBreakpoint.addListener((e) => console.log(isMobile(e)))
+
+    </script>
+
+    <script src="./scripts-form.js" defer></script>
 </body>
+
 </html>
