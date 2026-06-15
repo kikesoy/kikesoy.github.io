@@ -541,41 +541,25 @@ img {
     overflow: hidden;
     border: 0.125rem solid;
     color: oklch(from var(--gradient-start) 1 c h);
-    background-color: var(--gradient-start);
-    background-image: radial-gradient(circle farthest-corner at 50% 0%, var(--gradient-start), var(--color-dark));
-    border-color: oklch(from var(--gradient-start) 0.33 c h);
+    /* background-color: var(--gradient-start); */
+    /* background-image: radial-gradient(circle farthest-corner at 50% 0%, var(--color-medium), var(--color-dark)); */
+    border-color: var(--gradient-start)
 }
 
 .slider__item:nth-child(2) {
     --gradient-start: var(--color-accent-green);
-    /* color: oklch(from var(--color-accent-green) calc(l * 1.5) c h);
-    background-color: var(--color-accent-green);
-    background-image: radial-gradient(circle farthest-corner at 100% 0%, var(--color-accent-green), oklch(from var(--color-accent-green) 0.2 c h));
-    border-color: oklch(from var(--color-accent-green) calc(l * 1.5) c h); */
 }
 
 .slider__item:nth-child(3) {
     --gradient-start: var(--color-accent);
-    /* color: oklch(from var(--color-accent) calc(l * 1.5) c h);
-    background-color: var(--color-accent);
-    background-image: radial-gradient(circle farthest-corner at 100% 0%, var(--color-accent), oklch(from var(--color-accent) 0.2 c h));
-    border-color: oklch(from var(--color-accent) calc(l * 1.5) c h); */
 }
 
 .slider__item:nth-child(4) {
     --gradient-start: var(--color-accent-purple);
-    /* color: oklch(from var(--color-accent-purple) calc(l * 1.5) c h);
-    background-color: var(--color-accent-purple);
-    background-image: radial-gradient(circle farthest-corner at 100% 0%, var(--color-accent-purple), oklch(from var(--color-accent-purple) 0.2 c h));
-    border-color: oklch(from var(--color-accent-purple) calc(l * 1.5) c h); */
 }
 
 .slider__item:nth-child(5) {
     --gradient-start: var(--color-primary);
-    /* color: oklch(from var(--color-primary) calc(l * 1.5) c h);
-    background-color: var(--color-primary);
-    background-image: radial-gradient(circle farthest-corner at 100% 0%, var(--color-primary), oklch(from var(--color-primary) 0.2 c h));
-    border-color: oklch(from var(--color-primary) calc(l * 1.5) c h); */
 }
 
 .slider__header {
