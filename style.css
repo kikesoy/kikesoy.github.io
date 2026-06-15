@@ -615,7 +615,7 @@ img {
 }
 
 .text__slider--title {
-    font-size: max(6vw, 2rem);
+    font-size: max(6dvw, 2rem);
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
@@ -624,7 +624,7 @@ img {
 }
 
 .text__slider--description {
-    font-size: max(2vw, 1rem);
+    font-size: max(4.2dvw, 1.4rem);
 }
 
 
@@ -1013,12 +1013,12 @@ img {
 
 
     .text__slider--title {
-        font-size: 2.5dvw;
+        font-size: 2dvw;
         margin-bottom: 1rem;
     }
 
     .text__slider--description {
-        font-size: 1.5dvw;
+        font-size: 1.4dvw;
     }
 
     .section__container--footer .section__header {
