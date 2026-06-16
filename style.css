@@ -338,7 +338,7 @@ img {
 
 .cover__media {
     width: 100%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .landing__main {
@@ -835,9 +835,11 @@ img {
         padding: 0 1rem;
     }
 
+    /*
     .section__container--cover .section__header {
         height: 50%;
     }
+    */
 
 }
 
@@ -929,7 +931,7 @@ img {
 
     .section__container--cover .section__header {
         padding: 0;
-        padding-bottom: 13rem;
+        padding-bottom: 15dvh;
         width: 50%;
         margin-left: 50%;
     }
