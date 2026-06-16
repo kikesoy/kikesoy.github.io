@@ -509,7 +509,7 @@ img {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    gap: 2rem;
+    gap: 5%;
 }
 
 .slider__list::before,
@@ -523,6 +523,7 @@ img {
 
 .slider__list::after {
     width: 1px;
+    margin-left: -1px;
 }
 
 .slider__list::-webkit-scrollbar {
