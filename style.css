@@ -173,7 +173,12 @@ img {
     text-wrap: balance;
     opacity: 0;
     transform: translateY(20%);
+    margin-bottom: 3rem;
     transition: all 0.5s ease-in-out;
+}
+
+.elem__text:last-child {
+    margin-bottom: 0;
 }
 
 .elem__text.intersecting {
@@ -1013,7 +1018,7 @@ img {
 
 
     .text__slider--title {
-        font-size: 2dvw;
+        font-size: 1.33dvw;
         margin-bottom: 1rem;
     }
 
