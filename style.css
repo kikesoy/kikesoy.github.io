@@ -608,18 +608,19 @@ img {
 
 .text__slider {
     font-family: var(--font-family);
-    font-size: max(5.5vw, 1.25rem);
+    font-size: max(5dvw, 1rem);
     font-weight: 400;
     font-style: normal;
-    line-height: 1.4;
+    line-height: 1.3;
     text-wrap: balance;
 }
 
 .text__slider--title {
+    font-size: max(3.3dvw, 0.66rem);
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .text__slider--description {}
