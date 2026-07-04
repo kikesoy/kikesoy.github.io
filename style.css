@@ -334,7 +334,7 @@ img {
 .landing__cover::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     padding-top: 150%;
