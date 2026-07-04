@@ -337,7 +337,7 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding-top: 100%;
+    padding-top: 150%;
     background-image: linear-gradient(to bottom, oklch(from var(--color-dark) l c h / 0), var(--color-dark));
 }
 
@@ -868,7 +868,7 @@ img {
     }
 
     .landing__cover::after {
-        padding-top: 33.33%;
+        padding-top: 66.66%;
     }
 
     .text__elem--cover-name {
