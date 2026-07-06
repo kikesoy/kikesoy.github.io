@@ -580,15 +580,15 @@ img {
     background-color: var(--color-highlight);
 }
 
-.slider__icon--design {
-    -webkit-mask-image: url(./assets/icon-devices.svg?t=20260706123500);
-    mask-image: url(./assets/icon-devices.svg?t=20260706123500);
+.slider__icon--code {
+    -webkit-mask-image: url(./assets/icon-code.svg?t=20260706123500);
+    mask-image: url(./assets/icon-code.svg?t=20260706123500);
     background-color: oklch(from var(--color-secondary) 1 c h);
 }
 
-.slider__icon--devices {
-    -webkit-mask-image: url(./assets/icon-design.svg?t=20260706123500);
-    mask-image: url(./assets/icon-design.svg?t=20260706123500);
+.slider__icon--scalability {
+    -webkit-mask-image: url(./assets/icon-scalability.svg?t=20260706123500);
+    mask-image: url(./assets/icon-scalability.svg?t=20260706123500);
     background-color: oklch(from var(--color-accent-green) 1 c h);
 }
 
@@ -598,9 +598,9 @@ img {
     background-color: oklch(from var(--color-accent) 1 c h);
 }
 
-.slider__icon--nodes {
-    -webkit-mask-image: url(./assets/icon-nodes.svg?t=20260706123500);
-    mask-image: url(./assets/icon-nodes.svg?t=20260706123500);
+.slider__icon--stack {
+    -webkit-mask-image: url(./assets/icon-stack.svg?t=20260706123500);
+    mask-image: url(./assets/icon-stack.svg?t=20260706123500);
     background-color: oklch(from var(--color-accent-purple) 1 c h);
 }
 

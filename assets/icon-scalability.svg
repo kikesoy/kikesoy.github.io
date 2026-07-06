@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 240 240">
+  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="st0" width="240" height="240"/>
+  <g id="Layer_1">
+    <g>
+      <path d="M17.07,230l91.46-91.46-7.07-7.07L10,222.93v-82.93H0v90c0,5.52,4.48,10,10,10h90v-10H17.07Z"/>
+      <path d="M230,0h-90v10h82.93l-91.46,91.46,7.07,7.07L230,17.07v82.93h10V10c0-5.52-4.48-10-10-10Z"/>
+      <path d="M30,30h150v-10H30c-5.52,0-10,4.48-10,10v150h10V30Z"/>
+      <path d="M210,210H60v10h150c5.52,0,10-4.48,10-10V60h-10v150Z"/>
+    </g>
+  </g>
+</svg>
