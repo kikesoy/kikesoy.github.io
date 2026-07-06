@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 240 240">
-  <!-- Generator: Adobe Illustrator 30.6.0, SVG Export Plug-In . SVG Version: 2.1.4 Build 109)  -->
-  <defs>
-    <style>
-      .st0 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <rect class="st0" width="240" height="240"/>
+  
   <g id="Layer_1">
     <g>
       <path d="M17.07,230l91.46-91.46-7.07-7.07L10,222.93v-82.93H0v90c0,5.52,4.48,10,10,10h90v-10H17.07Z"/>
